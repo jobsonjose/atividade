@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="freewall.js"></script>
+	<title>Freewall</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#background{
+			width: 50vw;
+			margin: auto;
+			background: green;
+		}
+		.dropdown{
+			width: 250px;
+			height: 250px;
+			background: red;
+		}
+	</style>
+</head>
+<body>
+<h1>hello world</h1>
+	<div id="background">
+		<div class="dropdown"></div>
+		<div class="dropdown"></div>
+		<div class="dropdown"></div>
+		<div class="dropdown"></div>
+		<div class="dropdown"></div>
+		<div class="dropdown"></div>
+		
+	</div>
+
+<script type="text/javascript">
+	$(function(){
+		var wall = new Freewall("#background");
+		wall.fitWidth();
+	})
+</script>
+
+</body>
+</html>
